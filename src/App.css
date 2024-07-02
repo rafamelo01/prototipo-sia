@@ -32,10 +32,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -57,7 +59,8 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.radiogeral{
+
+.radiogeral {
   background-color: #ddd;
   border-radius: 10px;
   padding: 5px;
@@ -76,7 +79,7 @@ form {
   border-radius: 4px;
 }
 
-.section p{
+.section p {
   color: #000000;
   padding: 8px;
   border-radius: 4px;
@@ -90,6 +93,7 @@ form {
   border-radius: 4px;
   margin-top: 10px;
 }
+
 .section h4 {
   color: #000000;
   padding: 8px;
@@ -97,7 +101,8 @@ form {
   margin-top: 10px;
 }
 
-.result-section{
+.result-section {
+  position: relative;
   background-color: #fff;
   max-width: 90%;
   margin: 20px auto;
@@ -106,16 +111,28 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
-.questiongeral{
+
+.total-score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.questiongeral {
   margin: 15px 0;
 
 }
-.questiongeral label{
+
+.questiongeral label {
   display: block;
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 5px 0px;
 }
+
 .question {
   margin: 20px 10px;
 }
@@ -147,4 +164,58 @@ button {
 
 button:hover {
   background-color: #3700b3;
+}
+
+.ruler {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: lightgrey;
+  margin: 60px 0;
+  display: flex;
+}
+
+.ruler-level {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.level-1 {
+  background: #ff0000;
+  /* Vermelho */
+}
+
+.level-2 {
+  background: #f8c719;
+  /* Laranja */
+}
+
+.level-3 {
+  background: #8851b3;
+  /* Amarelo */
+}
+
+.level-4 {
+  background: #5e98ee;
+  /* Verde */
+}
+
+.level-5 {
+  background: #46ce5b;
+  /* Azul */
+}
+
+.ruler-indicator {
+  position: absolute;
+  top: -10px;
+  width: 12px;
+  height: 50px;
+  background: black;
+  transform: translateX(-50%);
 }

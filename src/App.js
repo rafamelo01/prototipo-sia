@@ -40,7 +40,7 @@ const App = () => {
 
     return (
         <div>
-            <h1>Autodiagnóstico LGPD</h1>
+            <h1>Protótipo SIA</h1>
             {!showResults ? (
                 <QuestionForm onSubmit={calculateResults} />
             ) : (
