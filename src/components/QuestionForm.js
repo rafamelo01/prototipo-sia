@@ -179,13 +179,13 @@ const QuestionForm = ({ onSubmit }) => {
                                     <div className="question" key={qIndex}>
                                         <label>{'As perguntas estavam claras e fáceis de entender?'}</label>
                                         <select name={id}>
-                                            <option value="NAO">NÃO</option>
-                                            <option value="SIM">SIM</option>
+                                            <option value="NAO">Não</option>
+                                            <option value="SIM">Sim</option>
                                         </select>
                                         <label>{'As perguntas foram relevantes e apropriadas para o propósito do formulário?'}</label>
                                         <select name={id}>
-                                            <option value="NAO">NÃO</option>
-                                            <option value="SIM">SIM</option>
+                                            <option value="NAO">Não</option>
+                                            <option value="SIM">Sim</option>
                                         </select>
                                         <label>{'Deixe suas sugestões para melhorar o formulário:'}</label>
                                         <textarea
@@ -206,8 +206,8 @@ const QuestionForm = ({ onSubmit }) => {
                                     <div className="question" key={qIndex}>
                                         <label>{questionText}</label>
                                         <select name={question} onChange={handleChange}>
-                                            <option value="NAO">NÃO</option>
-                                            <option value="SIM">SIM</option>
+                                            <option value="NAO">Não</option>
+                                            <option value="SIM">Sim</option>
                                         </select>
                                     </div>
                                 ))}
