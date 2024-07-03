@@ -57,14 +57,24 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
             />
 
             <h3>Regua de referência pontuação / nível de maturidade:</h3>
-            <div className="ruler">
-                <div className="ruler-level level-1">0 - 53 (Nível 1)</div>
-                <div className="ruler-level level-2">54 - 94 (Nível 2)</div>
-                <div className="ruler-level level-3">95 - 130 (Nível 3)</div>
-                <div className="ruler-level level-4">131 - 160 (Nível 4)</div>
-                <div className="ruler-level level-5">161 - 171 (Nível 5)</div>
-                <div className="ruler-indicator" style={{ left: `${calculatePosition(totalScore)}%` }}></div>
+            <div className="ruler-container">
+                <div className="ruler-titles">
+                    <div className="ruler-title">Inadequado</div>
+                    <div className="ruler-title">Ajustes Iniciais</div>
+                    <div className="ruler-title">Adequação Parcial</div>
+                    <div className="ruler-title">Adequação Satisfatória</div>
+                    <div className="ruler-title">Totalmente Adequado</div>
+                </div>
+                <div className="ruler">
+                    <div className="ruler-level level-1">0 - 53 (Nível 1)</div>
+                    <div className="ruler-level level-2">54 - 94 (Nível 2)</div>
+                    <div className="ruler-level level-3">95 - 130 (Nível 3)</div>
+                    <div className="ruler-level level-4">131 - 160 (Nível 4)</div>
+                    <div className="ruler-level level-5">161 - 171 (Nível 5)</div>
+                    <div className="ruler-indicator" style={{ left: `${calculatePosition(totalScore)}%` }}></div>
+                </div>
             </div>
+
 
             <div className={`timeline ${onlyCompleted || onlyPending ? 'row-layout' : ''}`}>
                 {onlyCompleted && (
