@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { questions } from './questionsData';
 import '../App.css';
 
@@ -28,6 +28,20 @@ const QuestionForm = ({ onSubmit }) => {
     const [answers, setAnswers] = useState({});
     const [companySize, setCompanySize] = useState('');
     const [selectedOption, setSelectedOption] = useState('');
+    useEffect(() => {
+        const initialAnswers = {};
+        Object.keys(questions).forEach((question) => {
+            const sectionIndex = parseInt(question.split(' - ')[0].replace('Seção ', ''), 10);
+            if (sectionIndex !== 1 && sectionIndex !== 2 && sectionIndex !== 10) {
+                initialAnswers[question] = 'NAO';
+            }
+        });
+        setAnswers(initialAnswers);
+    }, []);
+    useEffect(() => {
+        // Scroll para o topo da página quando o componente for montado
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleCompanySizeChange = (value) => {
         setCompanySize(value);
@@ -164,12 +178,12 @@ const QuestionForm = ({ onSubmit }) => {
                                 {sections[section][category].questions.map(({ id, label, type, options, placeholder, required }, qIndex) => (
                                     <div className="question" key={qIndex}>
                                         <label>{'As perguntas estavam claras e fáceis de entender?'}</label>
-                                        <select name={id} onChange={handleChange} required={required}>
+                                        <select name={id}>
                                             <option value="NAO">NÃO</option>
                                             <option value="SIM">SIM</option>
                                         </select>
                                         <label>{'As perguntas foram relevantes e apropriadas para o propósito do formulário?'}</label>
-                                        <select name={id} onChange={handleChange} required={required}>
+                                        <select name={id}>
                                             <option value="NAO">NÃO</option>
                                             <option value="SIM">SIM</option>
                                         </select>
@@ -177,7 +191,6 @@ const QuestionForm = ({ onSubmit }) => {
                                         <textarea
                                             style={{ width: '100%', resize: 'none' }}
                                             placeholder='Texto de resposta longa'
-                                            onChange={handleChange}
                                             name={`feedback-${qIndex}`}
                                             rows={5} // Ajuste o número de linhas conforme necessário
                                         ></textarea>

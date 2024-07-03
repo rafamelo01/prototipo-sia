@@ -10,15 +10,19 @@ const App = () => {
     const calculateResults = (answers) => {
         let totalScore = 0;
         let categoryScores = {};
+        let responses = { yes: [], no: [] }; // Para armazenar as respostas "Sim" e "Não"
 
         Object.keys(answers).forEach((question) => {
+            const { weight, category } = questions[question];
             if (answers[question] === 'SIM') {
-                const { weight, category } = questions[question];
                 totalScore += weight;
                 if (!categoryScores[category]) {
                     categoryScores[category] = 0;
                 }
                 categoryScores[category] += weight;
+                responses.yes.push({ question: question, weight: weight });
+            } else {
+                responses.no.push({ question: question, weight: weight });
             }
         });
 
@@ -30,7 +34,7 @@ const App = () => {
             }
         }
 
-        setResults({ totalScore, categoryScores, maturityLevel });
+        setResults({ totalScore, categoryScores, maturityLevel, responses });
         setShowResults(true); // Mostrar os resultados após o cálculo
     };
 
@@ -48,6 +52,7 @@ const App = () => {
                     totalScore={results.totalScore}
                     categoryScores={results.categoryScores}
                     maturityLevel={results.maturityLevel}
+                    responses={results.responses} // Passe as respostas para o componente Results
                     onBack={handleBackToForm}
                 />
             )}
