@@ -16,7 +16,7 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
     // Função para formatar a questão
     const formatQuestion = (question) => {
         const match = question.match(/Seção \d+ - (.+)\?/);
-        return match ? match[1] : question;
+        return match ? match[1] + '.' : question;
     };
 
     useEffect(() => {
