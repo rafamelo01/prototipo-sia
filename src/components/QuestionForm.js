@@ -111,11 +111,11 @@ const QuestionForm = ({ onSubmit }) => {
                                 {sections[section][category].questions.map(({ questionText, question }, qIndex) => (
                                     <div className="questiongeral" key={qIndex}>
                                         <label>{'Qual o seu nome?'}</label>
-                                        <input placeholder='Texto de resposta curta'></input>
+                                        <input style={{width:'50%'}} placeholder='Texto de resposta curta'></input>
                                         <label>{'Qual o seu cargo?'}</label>
-                                        <input placeholder='Texto de resposta curta'></input>
+                                        <input style={{width:'50%'}} placeholder='Texto de resposta curta'></input>
                                         <label>{'Qual o nome da empresa?'}</label>
-                                        <input placeholder='Texto de resposta curta'></input>
+                                        <input style={{width:'50%'}} placeholder='Texto de resposta curta'></input>
                                         <div className='radiogeral'>
                                             <label>Qual o porte da empresa?</label>
                                             <div>
@@ -164,9 +164,9 @@ const QuestionForm = ({ onSubmit }) => {
                                             </div>
                                         </div>
                                         <label>{'Qual seu principal tipo de cliente?'}</label>
-                                        <input placeholder='Texto de resposta curta'></input>
+                                        <input style={{width:'50%'}} placeholder='Texto de resposta curta'></input>
                                         <label>{'Qual é o setor da sua empresa?'}</label>
-                                        <input placeholder='Texto de resposta curta'></input>
+                                        <input style={{width:'50%'}} placeholder='Texto de resposta curta'></input>
                                     </div>
                                 ))}
                             </div>
@@ -187,7 +187,7 @@ const QuestionForm = ({ onSubmit }) => {
                                             <option value="NAO">NÃO</option>
                                             <option value="SIM">SIM</option>
                                         </select>
-                                        <label>{'Deixe suas sugestões para melhorar o formulário.'}</label>
+                                        <label>{'Deixe suas sugestões para melhorar o formulário:'}</label>
                                         <textarea
                                             style={{ width: '100%', resize: 'none' }}
                                             placeholder='Texto de resposta longa'

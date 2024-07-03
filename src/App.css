@@ -138,13 +138,42 @@ form {
   padding: 5px 0px;
 }
 
+.questiongeral input {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out;
+  /* Adiciona uma transição suave para o efeito */
+}
+
+.questiongeral input:hover {
+  transform: scale(1.02);
+  /* Escala 10% maior ao passar o mouse */
+  border-color: black;
+}
+
 .question {
   margin: 20px 10px;
+}
+
+.question textarea {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.question textarea:hover {
+  border-color: black;
+  transform: scale(1.02);
+
 }
 
 .question label {
   display: block;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .question select {
@@ -153,7 +182,31 @@ form {
   margin-bottom: 5px;
   border-radius: 4px;
   border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out;
+  /* Adiciona uma transição suave para o efeito */
 }
+
+.question select:hover {
+  border-color: black;
+
+}
+
+.question input {
+  padding: 8px;
+  width: 50%;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out;
+  /* Adiciona uma transição suave para o efeito */
+}
+
+.question input:hover {
+  transform: scale(1.03);
+  /* Escala 10% maior ao passar o mouse */
+  border-color: black;
+}
+
 
 button {
   display: block;
@@ -278,10 +331,12 @@ button:hover {
   background-color: #ffe172;
 
 }
+
 /* Estilo para o container geral da timeline */
 .timeline {
   display: flex;
-  flex-direction: column; /* Por padrão, a timeline é uma coluna */
+  flex-direction: column;
+  /* Por padrão, a timeline é uma coluna */
 }
 
 /* Estilo para a timeline em layout de linha */
@@ -307,15 +362,18 @@ button:hover {
 
 /* Estilo para item de etapas realizadas */
 .timeline-item.completed {
-  background-color: #e0f7fa; /* Exemplo de cor de fundo */
+  background-color: #e0f7fa;
+  /* Exemplo de cor de fundo */
 }
 
 /* Estilo para item de etapas pendentes */
 .timeline-item.pending {
-  background-color: #fffcef; /* Exemplo de cor de fundo */
+  background-color: #fffcef;
+  /* Exemplo de cor de fundo */
 }
 
 /* Estilo para largura total */
 .timeline-item.full-width {
-  flex: 1; /* Ocupa todo o espaço disponível */
+  flex: 1;
+  /* Ocupa todo o espaço disponível */
 }
