@@ -13,16 +13,16 @@ const App = () => {
         let responses = { yes: [], no: [] }; // Para armazenar as respostas "Sim" e "Não"
 
         Object.keys(answers).forEach((question) => {
-            const { weight, category } = questions[question];
+            const { id, weight, category } = questions[question];
             if (answers[question] === 'SIM') {
                 totalScore += weight;
                 if (!categoryScores[category]) {
                     categoryScores[category] = 0;
                 }
                 categoryScores[category] += weight;
-                responses.yes.push({ question: question, weight: weight });
+                responses.yes.push({ id: id, question: question, weight: weight });
             } else {
-                responses.no.push({ question: question, weight: weight });
+                responses.no.push({ id: id, question: question, weight: weight });
             }
         });
 

@@ -10,106 +10,132 @@ export const questions = {
   },
 
   "Seção 3 - A empresa trata dados pessoais, dados pessoais sensíveis, de crianças ou adolescentes?": {
+    id: 1,
     weight: 7,
     category: "Tratamento de dados pessoais dos titulares"
   },
   "Seção 3 - A empresa realiza o tratamento de dados pessoais de acordo com as bases legais (consentimento, contrato, legítimo interesse, dentre outras) específicas previstas na LGPD?": {
+    id: 2,
     weight: 10,
     category: "Tratamento de dados pessoais dos titulares"
   },
   "Seção 3 - A empresa possui uma política periódica e procedimentos para eliminação de dados pessoais?": {
+    id: 3,
     weight: 5,
     category: "Tratamento de dados pessoais dos titulares"
   },
   "Seção 3 - A empresa limita o tratamento de dados pessoais ao mínimo necessário para os fins específicos que justificam a sua coleta?": {
+    id: 4,
     weight: 5,
     category: "Tratamento de dados pessoais dos titulares"
   },
   "Seção 3 - A empresa conduz avaliações de vulnerabilidade e testes de penetração em seus sistemas de tratamento de dados pessoais?": {
+    id: 5,
     weight: 5,
     category: "Tratamento de dados pessoais dos titulares"
   },
   "Seção 4 - O consentimento dos titulares é obtido por escrito de forma clara e objetiva, esclarecendo as finalidades para as quais os dados serão tratados?": {
+    id: 6,
     weight: 10,
     category: "Transparência e direitos do titular"
   },
   "Seção 4 - A empresa possui um aviso de privacidade para os titulares de dados pessoais nos quais as informações sobre o tratamento de seus dados são disponibilizadas de forma clara e adequada?": {
+    id: 7,
     weight: 3,
     category: "Transparência e direitos do titular"
   },
   "Seção 4 - A empresa possui um procedimento para atender às solicitações dos titulares?": {
+    id: 8,
     weight: 5,
     category: "Transparência e direitos do titular"
   },
   "Seção 4 - A empresa garante ao titular de dados pessoais o direito de retirar o consentimento para tratamento de dados a qualquer momento?": {
+    id: 9,
     weight: 5,
     category: "Transparência e direitos do titular"
   },
   "Seção 5 - Se os dados pessoais são compartilhados com terceiros, existe formalização contratual dessa operação?": {
+    id: 10,
     weight: 3,
     category: "Fornecedores e terceiros"
   },
   "Seção 5 - Em relação aos dados pessoais coletados, sejam físicos ou virtuais, existem mecanismos de controle de acesso de terceiros e colaboradores?": {
+    id: 11,
     weight: 10,
     category: "Fornecedores e terceiros"
   },
   "Seção 5 - Os terceiros que trabalham com a empresa recebem algum tipo de orientação acerca das normas e diretrizes da empresa acerca do tema de privacidade e proteção de dados?": {
+    id: 12,
     weight: 3,
     category: "Fornecedores e terceiros"
   },
   "Seção 5 - A empresa exige que seus funcionários e prestadores de serviços assinem algum termo de confidencialidade acerca dos dados tratados?": {
+    id: 13,
     weight: 5,
     category: "Fornecedores e terceiros"
   },
   "Seção 5 - Os contratos com parceiros da empresa possuem cláusulas compatíveis com os termos e condições das leis de proteção de dados, em vigor?": {
+    id: 14,
     weight: 3,
     category: "Fornecedores e terceiros"
   },
   "Seção 5 - A empresa possui uma metodologia de avaliação de risco de privacidade e proteção de dados para fins de negociação com terceiros?": {
+    id: 15,
     weight: 3,
     category: "Fornecedores e terceiros"
   },
   "Seção 6 - A empresa possui políticas, procedimentos, e medidas protetivas que asseguram a segurança e garantia de conformidade com os regulamentos/leis de privacidade?": {
+    id: 16,
     weight: 8,
     category: "Segurança da informação"
   },
   "Seção 6 - A empresa possui políticas de privacidade (interna e externa) e boas práticas com relação à proteção de dados pessoais alinhadas com as regras da LGPD?": {
+    id: 17,
     weight: 10,
     category: "Segurança da informação"
   },
   "Seção 7 - A empresa possui um processo apropriado para agir rapidamente e notificar os titulares de dados pessoais sobre uma violação de dados, quando aplicável?": {
+    id: 18,
     weight: 7,
     category: "Violação de dados"
   },
   "Seção 7 - A empresa é capaz de detectar rapidamente incidentes de segurança?": {
+    id: 19,
     weight: 5,
     category: "Violação de dados"
   },
   "Seção 8 - A empresa possui a capacidade de categorizar os dados pessoais tratados de acordo com seus respectivos titulares?": {
+    id: 20,
     weight: 7,
     category: "Rastreabilidade"
   },
   "Seção 8 - A empresa possui registros de todos os dados pessoais por ela tratados e seus respectivos titulares?": {
+    id: 21,
     weight: 10,
     category: "Rastreabilidade"
   },
   "Seção 9 - A empresa nomeou um Encarregado?": {
+    id: 22,
     weight: 15,
     category: "Governança"
   },
   "Seção 9 - A empresa possui algum certificado de segurança da informação (ex., ISO 27001)?": {
+    id: 23,
     weight: 5,
     category: "Governança"
   },
   "Seção 9 - A empresa promove treinamentos obrigatórios para os funcionários, conscientizando-os sobre a importância e sobre suas responsabilidades em relação à privacidade e proteção de dados pessoais?": {
+    id: 24,
     weight: 10,
     category: "Governança"
   },
   "Seção 9 - A empresa instrui seus funcionários e contratados a limitar o armazenamento de dados pessoais do cliente em dispositivos de armazenamento móvel ao mínimo exigido para fins comerciais?": {
+    id: 25,
     weight: 7,
     category: "Governança"
   },
   "Seção 9 - A empresa possui um programa de governança em privacidade?": {
+    id: 26,
     weight: 5,
     category: "Governança"
   },
