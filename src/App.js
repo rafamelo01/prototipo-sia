@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuestionForm from './components/QuestionForm';
 import Results from './components/Results';
 import { questions, maturityLevels } from './components/questionsData';
@@ -6,6 +6,22 @@ import { questions, maturityLevels } from './components/questionsData';
 const App = () => {
     const [results, setResults] = useState(null);
     const [showResults, setShowResults] = useState(false);
+
+    // Carregar resultados salvos do localStorage, se existirem
+    useEffect(() => {
+        const savedResults = JSON.parse(localStorage.getItem('savedResults'));
+        if (savedResults) {
+            setResults(savedResults);
+            setShowResults(true);
+        }
+    }, []);
+
+    // Salvar resultados no localStorage sempre que houver mudança em results
+    useEffect(() => {
+        if (results) {
+            localStorage.setItem('savedResults', JSON.stringify(results));
+        }
+    }, [results]);
 
     const calculateResults = (answers) => {
         let totalScore = 0;
@@ -34,8 +50,12 @@ const App = () => {
             }
         }
 
-        setResults({ totalScore, categoryScores, maturityLevel, responses });
+        const calculatedResults = { totalScore, categoryScores, maturityLevel, responses };
+        setResults(calculatedResults);
         setShowResults(true); // Mostrar os resultados após o cálculo
+
+        // Salvar os resultados no localStorage
+        localStorage.setItem('savedResults', JSON.stringify(calculatedResults));
     };
 
     const handleBackToForm = () => {
