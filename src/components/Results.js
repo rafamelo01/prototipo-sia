@@ -293,8 +293,14 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
                         <div className="timeline-content">
                             <h3>Etapas realizadas: {responses.yes.length}</h3>
                             <ul>
-                                {responses.yes.map(({ question }, index) => (
-                                    <li className='etapas-realizadas' key={index}>{formatQuestion(question)}</li>
+                                {responses.yes.map(({ id, question }, index) => (
+                                    <li
+                                        className='etapas-realizadas'
+                                        key={index}
+                                        onClick={() => handleSuggestionClick(id)}
+                                    >
+                                        {formatQuestion(question)}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
@@ -326,8 +332,14 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
                             <div className="timeline-content">
                                 <h3>Etapas realizadas: {responses.yes.length}</h3>
                                 <ul>
-                                    {responses.yes.map(({ question }, index) => (
-                                        <li className='etapas-realizadas' key={index}>{formatQuestion(question)}</li>
+                                    {responses.yes.map(({ id, question }, index) => (
+                                        <li
+                                            className='etapas-realizadas'
+                                            key={index}
+                                            onClick={() => handleSuggestionClick(id)}
+                                        >{formatQuestion(question)}
+
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
