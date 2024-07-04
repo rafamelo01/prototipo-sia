@@ -371,7 +371,7 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
                 <div className="suggestion-popup">
                     <div className="suggestion-popup-content">
                         {renderSuggestionContent()}
-                        <button className="close-btn" onClick={closeSuggestion}>X</button>
+                        <button className="close-btn" onClick={closeSuggestion}>Voltar</button>
                     </div>
                 </div>
             )}
