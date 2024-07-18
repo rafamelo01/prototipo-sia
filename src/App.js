@@ -129,7 +129,12 @@ const App = () => {
                     <>
 
                         {!showResults ? (
-                            <QuestionForm onSubmit={calculateResults} />
+                            <div>
+                                <div className='form-header'>
+                                    <h3>Formulário</h3>
+                                </div>
+                                <QuestionForm onSubmit={calculateResults} />
+                            </div>
                         ) : (
                             <div>
                                 <div className='default-header'>

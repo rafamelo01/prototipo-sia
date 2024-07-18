@@ -52,9 +52,10 @@ h1 {
 }
 
 form {
+  position: relative;
   background-color: #fff;
-  max-width: 700px;
-  margin: 20px auto;
+  max-width: 50%;
+  margin: -15px auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -132,7 +133,26 @@ form {
   background-color: #ffffff;
   /* Menos margem inferior para um visual mais compacto */
 }
+.form-header {
+  max-width: 50%;
+  margin: 20px auto;
+  margin-top: 35px;
+  background-color: #ffffff;
+  /* Cor de fundo para garantir visibilidade */
 
+  /* Garante que o header fique acima do conteúdo rolável */
+  font-size: 18px;
+  /* Reduz um pouco o tamanho do header */
+  font-weight: bold;
+  align-items: right;
+  justify-content: flex-end;
+  /* Ajuste a altura conforme necessário */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  /* Menos margem inferior para um visual mais compacto */
+}
 .result-section p {
   margin-top: 30px;
 
