@@ -252,7 +252,6 @@ const Results = ({ totalScore, categoryScores, maturityLevel, responses, onBack 
 
     return (
         <div className='result-section'>
-            <h2>Resultados</h2>
             <p className={`nivel-maturidade nivel-maturidade-${maturityLevel}`}>
                 Nível de maturidade da organização: <strong>{maturityLevel}</strong>
             </p>

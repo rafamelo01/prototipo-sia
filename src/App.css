@@ -106,11 +106,31 @@ form {
   position: relative;
   background-color: #fff;
   max-width: 70%;
-  margin: 20px auto;
+  margin: -15px auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.default-header {
+  max-width: 70%;
+  margin: 20px auto;
+  margin-top: 35px;
+  background-color: #ffffff;
+  /* Cor de fundo para garantir visibilidade */
+
+  /* Garante que o header fique acima do conteúdo rolável */
+  font-size: 18px;
+  /* Reduz um pouco o tamanho do header */
+  font-weight: bold;
+  align-items: right;
+  justify-content: flex-end;
+  /* Ajuste a altura conforme necessário */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  /* Menos margem inferior para um visual mais compacto */
 }
 
 .result-section p {
@@ -584,10 +604,33 @@ button:hover {
 }
 
 .cursos-container {
+  position: relative;
+  background-color: #007bff0a;
+  max-width: 70%;
+  margin: -15px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
 
-  max-width: 90%;
-  margin: 20px auto;
+.user-charts-container {
+  position: relative;
+  background-color: #007bff0a;
+  max-width: 70%;
+  margin: -15px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
 
+.timeline-container {
+  position: relative;
+  background-color: #007bff0a;
+  max-width: 70%;
+  margin: -15px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 .course-card:hover {

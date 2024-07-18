@@ -131,29 +131,43 @@ const App = () => {
                         {!showResults ? (
                             <QuestionForm onSubmit={calculateResults} />
                         ) : (
-                            <Results
-                                totalScore={results.totalScore}
-                                categoryScores={results.categoryScores}
-                                maturityLevel={results.maturityLevel}
-                                responses={results.responses}
-                                onBack={handleBackToForm}
-                            />
+                            <div>
+                                <div className='default-header'>
+                                    <h3>Resultados</h3>
+                                </div>
+                                <Results
+                                    totalScore={results.totalScore}
+                                    categoryScores={results.categoryScores}
+                                    maturityLevel={results.maturityLevel}
+                                    responses={results.responses}
+                                    onBack={handleBackToForm}
+                                />
+
+                            </div>
                         )}
                     </>
                 )}
                 {activeSection === 'Dashboard' && (
                     <>
-                        <h3 style={{ textAlign: 'center' }}>Colaboradores que realizaram cursos</h3>
-
-                        <UserCharts />
-                        <h3 style={{ textAlign: 'center', marginTop: '50px' }}>Tarefas realizadas no período</h3>
-
-                        <TimelineChart />
+                        <div className='default-header'>
+                            <h3>Colaboradores que realizaram cursos</h3>
+                        </div>
+                        <div className='user-charts-container'>
+                            <UserCharts />
+                        </div>
+                        <div className='default-header'>
+                            <h3>Tarefas realizadas no período</h3>
+                        </div>
+                        <div className='timeline-container'>
+                            <TimelineChart />
+                        </div>
                     </>
                 )}
                 {activeSection === 'Cursos' && (
                     <>
-                        <h3 style={{ textAlign: 'center' }}>Cursos disponíveis</h3>
+                        <div className='default-header'>
+                            <h3>Cursos disponíveis</h3>
+                        </div>
                         <div className='cursos-container' >
                             <Curso
                                 minutagem='30:00'

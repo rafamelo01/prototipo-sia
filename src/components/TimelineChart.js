@@ -7,7 +7,7 @@ const TimelineChart = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jan 2024"
-            iconStyle={{ background: '#e86971', color: '#fff' }}
+            iconStyle={{ background: '#007bff', color: '#fff' }}
         >
             <h3 className="vertical-timeline-element-title">Política de Eliminação de Dados</h3>
             <p>A empresa definiu uma política de eliminação de dados pessoais.</p>
@@ -18,7 +18,7 @@ const TimelineChart = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Mar 2024"
-            iconStyle={{ background: '#e86971', color: '#fff' }}
+            iconStyle={{ background: '#007bff', color: '#fff' }}
         >
             <h3 className="vertical-timeline-element-title">Canal de Atendimento e Controle de Acesso</h3>
             <p>A empresa definiu um canal de atendimento para atender às solicitações dos titulares.</p>
@@ -28,7 +28,7 @@ const TimelineChart = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Jun 2024"
-            iconStyle={{ background: '#e86971', color: '#fff' }}
+            iconStyle={{ background: '#007bff', color: '#fff' }}
         >
             <h3 className="vertical-timeline-element-title">Política de Privacidade</h3>
             <p>A empresa criou uma política de privacidade interna com medidas de boas práticas em relação a proteção de dados pessoais.</p>
@@ -37,7 +37,7 @@ const TimelineChart = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Set 2024"
-            iconStyle={{ background: '#e86971', color: '#fff' }}
+            iconStyle={{ background: '#007bff', color: '#fff' }}
         >
             <h3 className="vertical-timeline-element-title">Normas e Diretrizes para Terceiros</h3>
             <p>A empresa criou uma política de normas e diretrizes para terceiros acerca do tema de privacidade e proteção de dados.</p>
@@ -46,7 +46,7 @@ const TimelineChart = () => (
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Dez 2024"
-            iconStyle={{ background: '#e86971', color: '#fff' }}
+            iconStyle={{ background: '#007bff', color: '#fff' }}
         >
             <h3 className="vertical-timeline-element-title">Encarregado de Dados</h3>
             <p>A empresa contratou um Encarregado de dados.</p>
